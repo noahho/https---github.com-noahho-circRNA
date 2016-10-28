@@ -147,6 +147,6 @@ def generate_examples(testmode):
 			negative_examples.append(get_gene_data(gene, nchr, seqs))
 			
 	print("Saving test data...")
-	SeqIO.write(positive_examples, "../data/positive_t.fa", "fasta")
-	SeqIO.write(negative_examples, "../data/negative_t.fa", "fasta")
+	SeqIO.write(positive_examples, "../data/positive.fa", "fasta")
+	SeqIO.write(negative_examples, "../data/negative.fa", "fasta")
 generate_examples(False);

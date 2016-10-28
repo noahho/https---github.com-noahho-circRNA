@@ -1,5 +1,0 @@
-from bintrees import AVLTree
-
-dict = {1: 2, 2: 3, 4: 6}
-tree = AVLTree(dict)
-print tree.items

@@ -88,4 +88,5 @@ for train, test in ss.split(X):
 aclu = np.average(np.array(prs))
 aauc = np.average(np.array(auc))
 af1 = np.average(np.array(f1scores))
+print "Results of 10-fold cross-validation:"
 print "ACLU: " + str(aclu) + ", Average AUC (ROC): " + str(aauc) + " Average F1 Score: "+str(af1);

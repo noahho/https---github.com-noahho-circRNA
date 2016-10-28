@@ -61,11 +61,11 @@ def get_kmer_features(data, k):
 	key_kmers += ["GTAG"];
 
 	kmer_features = []
-	int i = 0;
+	i = 0;
 	p1 = (len(data)/10);
 	for gene in data:
 		gene = gene[0]
-		if (i % p1 == 0)
+		if (i % p1 == 0):
 			print "## 1% step..."
 		kmer_features.append([ float(gene.count(kmer)) / len(gene)
 			for kmer in key_kmers ])
