@@ -26,7 +26,7 @@ def get_features(data):
 	length_features = get_other_features(data)
 	
 	print 'extracting kmer feature...'
-	kmer_features = get_kmer_features(data, 4)
+	kmer_features = get_kmer_features(data, 3)
 	
 	i = 0
 	features = []
